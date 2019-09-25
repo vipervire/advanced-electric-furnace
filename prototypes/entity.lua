@@ -1,13 +1,13 @@
 data:extend{
-{
+  {
     type = "furnace",
     name = "advanced-electric-furnace",
     icon = "__base__/graphics/icons/electric-furnace.png",
     icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = {mining_time = 1, result = "advanced-electric-furnace"},
-    max_health = 500,
-    corpse = "big-remnants",
+    minable = {mining_time = 0.2, result = "advanced-electric-furnace"},
+    max_health = 350,
+    corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
     resistances =
     {
@@ -33,7 +33,7 @@ data:extend{
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions = 0.01
+      emissions_per_minute = 1
     },
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
@@ -163,5 +163,5 @@ data:extend{
       }
     },
     fast_replaceable_group = "furnace"
-}
+  }
 }
